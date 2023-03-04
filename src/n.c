@@ -191,6 +191,11 @@ long double VieteSum;
 
 
 
+complex double fc(const complex double z0){
+
+	return z0*z0 + c;
+}
+
 
 
 /*
@@ -857,6 +862,25 @@ int DrawRootsColor(unsigned char A[], unsigned char iColor){
 }
 
 
+
+
+
+// dDrawLine(long double Zx0, long double Zy0, long double Zx1, long double Zy1, unsigned char color, unsigned char A[]) 
+
+int DrawCycles(unsigned char A[], unsigned char iColor){
+	int d;
+	for (d=0; d<distinc_points; d++ ){
+ 		dDrawBigPoint( zzd[d], A, iColor);
+ 		cDrawLine(zzd[d], fc(zzd[d]), 0, A);
+ 		}
+ 	return 0;
+
+
+
+}
+
+
+
 // https://en.wikipedia.org/wiki/Vieta%27s_formulas
 
 long double ComputeVieteSum(){
@@ -1166,8 +1190,8 @@ int main() {
   	DrawRootsColor(data, 0); // draw black roots on white background
   	SaveArray2PGMFile( data, period, sMax, 17,  "only roots");
   
-  
-  
+  	DrawCycles(data, 0);
+  	SaveArray2PGMFile( data, period, sMax, 18,  "cycles");
   
   	//
   	end();
