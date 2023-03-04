@@ -88,7 +88,7 @@ Newton method finds 8 points
  z = +0.623489801858733531; -0.781831482468029809 exact period = 3 stability = 8.000000000000000000
 
 ```
-
+![](./images/3_0_cycles.png "2 period 3 cycles for c=0") 
 
 
 # scr code
