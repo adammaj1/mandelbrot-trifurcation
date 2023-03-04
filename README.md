@@ -70,7 +70,7 @@ Here imaginary part is not 0. One can use
 
 
 # scr code
-* [./src/m.gp](m.gp) - gnuplot bash file for drawing path3.png diagram
+* [m.gp](./src/m.gp) - gnuplot bash file for drawing path3.png diagram
 
 
 
