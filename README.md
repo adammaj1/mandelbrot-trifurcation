@@ -67,11 +67,33 @@ Here imaginary part is not 0. One can use
 * [wikibooks : first derivative wrt z](https://en.wikibooks.org/wiki/Fractals/Mathematics/Derivative#First_derivative_wrt_z)
 
 
+Period 3 points for c = 0
+
+![](./images/0.png "period 3 points for c=0") 
+
+Newton method finds 8 points
+* two period 3 cycles
+* two fixed points: repellling z=1 and superattracting z=0
+
+```c
+ periodic points are: 
+ z = +1.000000000000000000; +0.000000000000000000 exact period = 1 stability = 2.000000000000000000
+ z = +0.000000000000000000; +0.000000000000000000 exact period = 1 stability = 0.000000000000000000
+ 
+ z = +0.623489801858733531; +0.781831482468029809 exact period = 3 stability = 8.000000000000000000
+ z = -0.222520933956314404; +0.974927912181823607 exact period = 3 stability = 8.000000000000000000
+ z = -0.900968867902419126; +0.433883739117558120 exact period = 3 stability = 8.000000000000000000
+ z = -0.900968867902419126; -0.433883739117558120 exact period = 3 stability = 8.000000000000000000
+ z = -0.222520933956314404; -0.974927912181823607 exact period = 3 stability = 8.000000000000000000
+ z = +0.623489801858733531; -0.781831482468029809 exact period = 3 stability = 8.000000000000000000
+
+```
+
 
 
 # scr code
 * [m.gp](./src/m.gp) - gnuplot bash file for drawing path3.png diagram
-
+* [n.c](./src/n.c) = c file for finding periodic points using Newton method
 
 
 
