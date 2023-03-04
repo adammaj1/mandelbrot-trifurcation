@@ -1,7 +1,41 @@
 # n-furcation in the Mandelbrot set
 
 * choose path on the parameter plane ( p/q internal ray)
-* For parameters from 2d path on the parameter plane one can compute periodic points z (dynamic plan = 2D frame ) and draw 3D birurcation diagram from dynamical frames
+* For parameters from 2d path on the parameter plane one can compute periodic points z (dynamic plan = 2D frame ) 
+* draw 3D birurcation diagram from dynamical frames
+
+
+Periodic points z 
+* for period 1  ( fixed point) using explicit method
+* for higher periods using [Newton method](https://github.com/adammaj1/periodic-points-of-complex-quadratic-polynomial-using-newton-method)
+
+```c
+complex double GiveFixed(complex double c){
+/* 
+
+Equation defining fixed points : z^2-z+c = 0
+	z*2+c = z
+	z^2-z+c = 0
+
+coefficients of standard form ax^2+ bx + c  
+ 	a = 1 , b = -1 , c = c
+ 
+The discriminant d is 
+
+	d=b^2- 4ac 
+	d = 1 - 4c
+	
+ 
+ alfa =  (1-sqrt(d))/2 
+*/
+
+	complex double d = 1-4*c;
+	complex double z = (1-csqrt(d))/2.0;
+	return z;
+
+}
+
+```
 
 
 ## Bifurcation = 2-furcation
@@ -31,6 +65,12 @@ Here imaginary part is not 0. One can use
 * [the multiplier map](https://en.wikibooks.org/wiki/Fractals/Iterations_in_the_complex_plane/Mandelbrot_set_interior#internal_coordinate_and_multiplier_map) to aproximate c 
 * [github repo with c code](https://github.com/adammaj1/multiplier)
 * [wikibooks : first derivative wrt z](https://en.wikibooks.org/wiki/Fractals/Mathematics/Derivative#First_derivative_wrt_z)
+
+
+
+
+# scr code
+* [./src/m.gp](m.gp) - gnuplot bash file for drawing path3.png diagram
 
 
 
