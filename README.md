@@ -15,13 +15,18 @@ Path on the parameter plane ( along real slice of Mandelbrot set = real axis, al
 
 ## Trifurcation 
 
+![](./png/path.png "path on the parameter plane") 
+
 Path on the parameter plane
 * c = 0 ( interior of period 1 component, center of period 1 component)
 * from c=0 to c = -0.125000000000000  +0.649519052838329i ( interior of period 1 component, internal ray 1/3 )
 * c = -0.125000000000000  +0.649519052838329i ( common point of boundary of period 1 component and period 3 component, root point = bifurcation point)
 * from root to center c = -0.122561166876654  +0.744861766619744 i (interior,  center of period 3 component)
 
-Here imaginary part is not 0. One can use [the multiplier map](https://en.wikibooks.org/wiki/Fractals/Iterations_in_the_complex_plane/Mandelbrot_set_interior#internal_coordinate_and_multiplier_map) to aproximate c 
+Here imaginary part is not 0. One can use 
+* [the multiplier map](https://en.wikibooks.org/wiki/Fractals/Iterations_in_the_complex_plane/Mandelbrot_set_interior#internal_coordinate_and_multiplier_map) to aproximate c 
+* [github repo wit c code](https://github.com/adammaj1/multiplier)
+* [wikibooks : first derivative wrt z](https://en.wikibooks.org/wiki/Fractals/Mathematics/Derivative#First_derivative_wrt_z)
 
 
 
@@ -55,6 +60,12 @@ git add *.png
 git mv  *.png ./images
 git commit -m "move"
 git push -u origin main
+```
+
+then link the images:
+
+```git
+![](./png/n.png "description") 
 ```
 
 
