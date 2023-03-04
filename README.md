@@ -15,7 +15,7 @@ Path on the parameter plane ( along real slice of Mandelbrot set = real axis, al
 
 ## Trifurcation 
 
-![](./png/path.png "path on the parameter plane") 
+![](./images/path.png "path on the parameter plane") 
 
 Path on the parameter plane
 * c = 0 ( interior of period 1 component, center of period 1 component)
