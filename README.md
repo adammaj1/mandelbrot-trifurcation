@@ -1,21 +1,25 @@
 # n-furcation in the Mandelbrot set
 
+* choose path on the parameter plane ( p/q internal ray)
+* For parameters from 2d path on the parameter plane one can compute periodic points z (dynamic plan = 2D frame ) and draw 3D birurcation diagram from dynamical frames
 
-## Bifurcation
+
+## Bifurcation = 2-furcation
+![](./images/bifurcation.png "bifurcation") 
+
 
 Path on the parameter plane ( along real slice of Mandelbrot set = real axis, all poointa are real, Imaginary part im(c) = 0)
-* c > 1/4 ( exterior of Mandelbrot set)
-* c = 1/4 (boundary of period 1 component,  cusp)
-* 1/4 > c > 0  ( interior of period 1 component, internal ray 0 )
 * c = 0 ( interior of period 1 component, center of period 1 component)
 * -3/4 > c > 0  ( interior of period 1 component, internal ray 1/2 )
 * c = -3/4 ( common point of boundary of period 1 component and period 2 component, root point = bifurcation point)
 * -1 > c > -3/4 (interior of period 2 component, internal ray 0  )
  
 
-## Trifurcation 
 
-![](./images/path.png "path on the parameter plane") 
+
+## Trifurcation = 3-furcation 
+
+![](./images/path3.png "path on the parameter plane") 
 
 Path on the parameter plane
 * c = 0 ( interior of period 1 component, center of period 1 component)
@@ -25,7 +29,7 @@ Path on the parameter plane
 
 Here imaginary part is not 0. One can use 
 * [the multiplier map](https://en.wikibooks.org/wiki/Fractals/Iterations_in_the_complex_plane/Mandelbrot_set_interior#internal_coordinate_and_multiplier_map) to aproximate c 
-* [github repo wit c code](https://github.com/adammaj1/multiplier)
+* [github repo with c code](https://github.com/adammaj1/multiplier)
 * [wikibooks : first derivative wrt z](https://en.wikibooks.org/wiki/Fractals/Mathematics/Derivative#First_derivative_wrt_z)
 
 
