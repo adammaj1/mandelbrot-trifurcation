@@ -91,7 +91,7 @@ Newton method finds 8 points
 
 ```
 
-Here are 2 repelling perid 3 cycles and 2  fixeds points ( period 1 cycles )
+Here are 2 repelling period 3 cycles and 2  fixed points ( period 1 cycles )
 
 ![](./images/3_0_cycles.png "2 period 3 cycles for c=0") 
 
@@ -99,7 +99,8 @@ Here are 2 repelling perid 3 cycles and 2  fixeds points ( period 1 cycles )
 # scr code
 * [m.gp](./src/m.gp) - gnuplot bash file for drawing path3.png diagram
 * [n.c](./src/n.c) = c file for [finding periodic points using Newton method](https://github.com/adammaj1/periodic-points-of-complex-quadratic-polynomial-using-newton-method)
-
+* [m.c](./src.m.c) = c file for computing c and zf fixed points along internla rays
+* [m.txt](./src/m.txt) = txt file with result of m.c program (#  radius cx cy  zxf  zyf ). It will be used for creating graphic 
 
 
 # git
